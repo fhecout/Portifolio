@@ -1,0 +1,51 @@
+/* Estilos para a Navbar */
+.round-nav {
+    background-color: #ffff; /* Cor de fundo da navbar (escuro) */
+    padding: 10px 40px; /* Espaçamento interno para dar um efeito de flutuação */
+    display: flex;
+    justify-content: center; /* Centraliza os itens */
+    align-items: center;
+    position: fixed;
+    width: auto;
+    height: 50px;
+    top: 20px; /* Distância do topo da página */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza horizontalmente a navbar */
+    border-radius: 25px; /* Bordas arredondadas para efeito de flutuação */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar a navbar */
+    z-index: 1000; /* Garante que a navbar fique acima de outros elementos */
+    transition: background-color 0.3s, color 0.3s; /* Suaviza a transição de cores */
+}
+
+body.light-mode .round-nav {
+    background-color: #000; /* Cor de fundo da navbar no modo claro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ajusta a sombra no modo claro */
+}
+
+.round-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* Espaçamento entre os itens */
+    align-items: center; /* Garante que o botão de alternância e os textos estejam alinhados */
+    font-family: 'Raleway';
+}
+
+.round-nav ul li a {
+    color: #000; /* Cor do texto dos links no modo escuro */
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold; /* Deixa o texto em negrito */
+    transition: color 0.3s; /* Suaviza a transição de cor do texto */
+}
+
+body.light-mode .round-nav ul li a {
+    color: #fff; /* Cor do texto dos links no modo claro */
+}
+
+.round-nav ul li a:hover {
+    color: #f0a500; /* Cor de hover dos links */
+}
+
+body.light-mode .round-nav ul li a:hover {
+    color: #f0a500; /* Mantém a cor de hover no modo claro */
+}

@@ -1,0 +1,42 @@
+/* Estilos para a navbar superior (inicialmente branca) */
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Defina a altura da navbar conforme necessário */
+    background-color: #fff; /* Cor de fundo da navbar inicial (branca) */
+    display: flex;
+    justify-content: space-between; /* Distribui os itens entre as extremidades */
+    align-items: center;
+    padding: 0 20px; /* Adiciona um espaçamento nas laterais */
+    z-index: 1000; /* Garante que a navbar fique acima de outros elementos */
+    color: #000; /* Cor do texto padrão (preto) */
+    transition: background-color 0.3s, color 0.3s; /* Suaviza a transição das cores */
+}
+
+.top-nav .logo img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho da logo */
+    width: 170px; /* Define o tamanho desejado da imagem */
+    height: 170px; /* Define a altura desejada da imagem */
+    object-fit: contain; /* Garante que a imagem se ajuste corretamente */
+}
+
+.top-nav .container {
+    margin-left: auto; /* Move o container para o extremo direito */
+}
+
+/* Estilo para o conteúdo abaixo da navbar para evitar sobreposição */
+body {
+    padding-top: 60px; /* Deve ser igual à altura da navbar */
+}
+
+/* Modo Escuro (quando ativado) */
+body.light-mode .top-nav {
+    background-color: #000; /* Cor de fundo da navbar no modo escuro (preta) */
+    color: #fff; /* Cor do texto no modo escuro (branca) */
+}
+
+body.light-mode .top-nav a {
+    color: #fff; /* Cor dos links no modo escuro */
+}

@@ -1,0 +1,84 @@
+/* Estilo padrão (modo escuro) */
+body {
+    background-color: #000;
+    /* color: #fff; */
+}
+
+body.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Seção 1 - Estilo para o modo escuro e claro */
+#section1 {
+    position: relative;
+    overflow: hidden; 
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; 
+    padding: 20px;
+    z-index: -2;
+    font-family: 'Raleway', sans-serif;
+}
+
+body.light-mode #section1 {
+    background-color: #f9f9f9; /* Muda a cor de fundo no modo claro */
+}
+
+p {
+    line-height: 1;
+    z-index: -2;
+}
+
+span {
+    z-index: -2;
+    display: block;
+    width: 2vmax; 
+    height: 2vmax; 
+    font-size: 2vmax; 
+    color: #FFD70011; 
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+main {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    z-index: -1; 
+    opacity: 0.5; 
+}
+
+body.light-mode main {
+    opacity: 0.7; /* Aumenta a opacidade no modo claro para melhor contraste */
+}
+
+h1 {
+    position: relative;
+    z-index: 1; 
+    font-size: 6em;
+    font-weight: bold;
+    line-height: 1.2em;
+    max-width: 800px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-left: -40%; 
+}
+
+body.light-mode h1 {
+    color: #000; /* Muda a cor do texto para preto no modo claro */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* Ajusta a sombra do texto no modo claro */
+}
+
+.highlight {
+    background: linear-gradient(to right, #a75fd2, #4a90e2); /* Cor gradiente para a palavra "products" */
+    -webkit-background-clip: text;
+    /* color: transparent; */
+  }

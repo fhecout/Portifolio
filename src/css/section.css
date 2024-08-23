@@ -1,0 +1,5 @@
+.section {
+    height: 100vh; /* Cada seção ocupa 100% da altura da janela */
+    display: flex;
+}
+
